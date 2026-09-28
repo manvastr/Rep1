@@ -6,9 +6,6 @@ app = Flask(__name__)
 def index():
     nombre = "Juan Manuel"
     return f"<h1>Bienvenido al portal universitario, {nombre}!</h1>"
-@app.route('/api/status')
-def status():
-    return {"status": "ok", "entorno": "contenedor-docker", "version": "1.1.0"}
 
 @app.route('/api/status')
 def status():
